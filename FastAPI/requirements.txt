@@ -1,5 +1,6 @@
+fastapi
+uvicorn
+sqlalchemy
 python-dotenv
-bcrypt
 snowflake-sqlalchemy
-pandas
-streamlit
+pydantic

@@ -1,0 +1,7 @@
+pinecone-client
+streamlit
+openai
+python-dotenv
+requests
+bs4
+selenium

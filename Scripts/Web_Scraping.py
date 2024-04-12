@@ -38,7 +38,7 @@ def scrape_content(driver,url) :
     level_span = soup.find('span', class_='content-utility-level')
     # Find the span with class "content-utility-topic" within the level_span
     if level_span is not None:
-        level_text = level_span.find('span', class_='content-utility-topic').text.strip()
+        level_text = level_span.find('span', class_='content-utility-topic').text.strip() # type: ignore
     else:
         level_text = "Doesn't Exist"
 
@@ -59,7 +59,7 @@ def scrape_content(driver,url) :
             paragraphs += p.get_text(strip=True) + ' '
         table = introduction_section.find_next_sibling('table')
         if table:
-            table_rows = table.find_all('tr')
+            table_rows = table.find_all('tr') # type: ignore
             table_text = ''
             for row in table_rows:
                 columns = row.find_all(['th', 'td'])
@@ -77,12 +77,12 @@ def scrape_content(driver,url) :
     if learning_outcomes_section is not None:
         outcomes_section = learning_outcomes_section.find_next_sibling()
         if outcomes_section is not None:
-            bullet_points = [li.get_text(strip=True) for li in outcomes_section.find_all('li')]
+            bullet_points = [li.get_text(strip=True) for li in outcomes_section.find_all('li')] # type: ignore
             bullet = '\n'.join(bullet_points)
         else:
             outcomes_section = learning_outcomes_section.find_next_sibling('p')
             if outcomes_section is not None:
-                bullet_points = [p.get_text(strip=True) for p in outcomes_section.find_all('p') if p.get_text(strip=True)]
+                bullet_points = [p.get_text(strip=True) for p in outcomes_section.find_all('p') if p.get_text(strip=True)] # type: ignore
                 bullet = '\n'.join(bullet_points)
             else:
                 bullet = "Doesn't Exist"
@@ -94,8 +94,8 @@ def scrape_content(driver,url) :
     link_tag = soup.find('a', class_='locked-content')
     # Extract the link
     if link_tag is not None:
-        link = link_tag['href']
-        full_link = "https://www.cfainstitute.org" + link
+        link = link_tag['href'] # type: ignore
+        full_link = "https://www.cfainstitute.org" + link # type: ignore
     else:
         full_link = "Doesn't Exist"
 
@@ -104,10 +104,10 @@ def scrape_content(driver,url) :
     if summary_section is not None:
         summary_div = summary_section.find_next_sibling('div')
         if summary_div is not None:
-            bullet_points = [li.get_text(strip=True) for li in summary_div.find_all('li')]
+            bullet_points = [li.get_text(strip=True) for li in summary_div.find_all('li')] # type: ignore
             sbullet = '\n'.join(bullet_points)
         else:
-            summary_div = summary_div.find_next_sibling('p')
+            summary_div = summary_div.find_next_sibling('p') # type: ignore
             if summary_div is not None:
                 bullet_points = [p.get_text(strip=True) for p in summary_div.find_all('p') if p.get_text(strip=True)]
                 sbullet = '\n'.join(bullet_points)

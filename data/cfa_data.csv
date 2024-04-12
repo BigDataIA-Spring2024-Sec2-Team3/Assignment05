@@ -1,0 +1,230 @@
+Time Value of Money in Finance,Quantitative Methods,"2024",Level I," As individuals, we often face decisions that involve saving money for a future use, or borrowing money for current consumption. We then need to determine the amount we need to invest, if we are saving, or the cost of borrowing, if we are shopping for a loan. As investment analysts, much of our work also involves evaluating transactions with present and future cash flows. When we place a value on any security, for example, we are attempting to determine the worth of a stream of future cash flows. To carry out all the above tasks accurately, we must understand the mathematics of time value of money problems. Money has time value in that individuals value a given amount of money more highly the earlier it is received. Therefore, a smaller amount of money now may be equivalent in value to a larger amount received at a future date. Thetime value of moneyas a topic in investment mathematics deals with equivalence relationships between cash flows with different dates. Mastery of time value of money concepts and techniques is essential for investment analysts. The reading is organized as follows: Section 2 introduces some terminology used throughout the reading and supplies some economic intuition for the variables we will discuss. Section 3 tackles the problem of determining the worth at a future point in time of an amount invested today. Section 4 addresses the future worth of a series of cash flows. These two sections provide the tools for calculating the equivalent value at a future date of a single cash flow or series of cash flows. Sections 5 and 6 discuss the equivalent value today of a single future cash flow and a series of future cash flows, respectively. In Section 7, we explore how to determine other quantities of interest in time value of money problems.  ","interpret interest rates as required rates of return, discount rates, or opportunity costs;
+explain an interest rate as the sum of a real risk-free rate and premiums that compensate investors for bearing distinct types of risk;
+calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding;
+solve time value of money problems for different frequencies of compounding;
+calculate and interpret the future value (FV) and present value (PV) of a single sum of money, an ordinary annuity, an annuity due, a perpetuity (PV only), and a series of unequal cash flows;
+demonstrate the use of a time line in modeling and solving time value of money problems.",https://www.cfainstitute.orghttps://study.cfainstitute.org/app/member-access-refresher-readings-2024-cfa-program-level-i#read/section/learning-outcomes-1,"The interest rate,r, is the required rate of return;ris also called the discount rate or opportunity cost.
+An interest rate can be viewed as the sum of the real risk-free interest rate and a set of premiums that compensate lenders for risk: an inflation premium, a default risk premium, a liquidity premium, and a maturity premium.
+The future value, FV, is the present value, PV, times the future value factor, (1 +r)N.
+The interest rate,r, makes current and future currency amounts equivalent based on their time value.
+The stated annual interest rate is a quoted interest rate that does not account for compounding within the year.
+The periodic rate is the quoted interest rate per period; it equals the stated annual interest rate divided by the number of compounding periods per year.
+The effective annual rate is the amount by which a unit of currency will grow in a year with interest on interest included.
+An annuity is a finite set of level sequential cash flows.
+There are two types of annuities, the annuity due and the ordinary annuity. The annuity due has a first cash flow that occurs immediately; the ordinary annuity has a first cash flow that occurs one period from the present (indexed att= 1).
+On a time line, we can index the present as 0 and then display equally spaced hash marks to represent a number of periods into the future. This representation allows us to index how many periods away each cash flow will be paid.
+Annuities may be handled in a similar approach as single payments if we use annuity factors rather than single-payment factors.
+The present value, PV, is the future value, FV, times the present value factor, (1 +r)−N.
+The present value of a perpetuity isA/r, whereAis the periodic payment to be received forever.
+It is possible to calculate an unknown variable, given the other relevant variables in time value of money problems.
+The cash flow additivity principle can be used to solve problems with uneven cash flows by combining single payments and annuities."
+Common Probability Distributions,Quantitative Methods,"2021",Level I," In nearly all investment decisions we work with random variables. The return on a
+stock and its earnings per share are familiar examples of random variables. To make
+probability statements about a random variable, we need to understand its probability
+distribution. Aprobability distributionspecifies the probabilities of the possible outcomes of a random variable. In this reading, we present important facts about four probability distributions and
+their investment uses. These four distributions—the uniform, binomial, normal, and
+lognormal—are used extensively in investment analysis. They are used in such basic
+valuation models as the Black–Scholes–Merton option pricing model, the binomial option
+pricing model, and the capital asset pricing model. With the working knowledge of
+probability distributions provided in this reading, you will also be better prepared
+to study and use other quantitative methods such as hypothesis testing, regression
+analysis, and time-series analysis. After discussing probability distributions, we end the reading with a brief introduction
+to Monte Carlo simulation, a computer-based tool for obtaining information on complex
+problems. For example, an investment analyst may want to experiment with an investment
+idea without actually implementing it. Or she may need to price a complex option for
+which no simple pricing formula exists. In these cases and many others, Monte Carlo
+simulation is an important resource. To conduct a Monte Carlo simulation, the analyst
+must identify risk factors associated with the problem and specify probability distributions
+for them. Hence, Monte Carlo simulation is a tool that requires an understanding of
+probability distributions. Before we discuss specific probability distributions, we define basic concepts and
+terms. We then illustrate the operation of these concepts through the simplest distribution,
+the uniform distribution. That done, we address probability distributions that have
+more applications in investment work but also greater complexity.  ","define a probability distribution and distinguish between discrete and continuous
+                     random variables and their probability functions;
+describe the set of possible outcomes of a specified discrete random variable;
+interpret a cumulative distribution function;
+calculate and interpret probabilities for a random variable, given its cumulative
+                     distribution function;
+define a discrete uniform random variable, a Bernoulli random variable, and a binomial
+                     random variable;
+calculate and interpret probabilities given the discrete uniform and the binomial
+                     distribution functions;
+construct a binomial tree to describe stock price movement;
+define the continuous uniform distribution and calculate and interpret probabilities,
+                     given a continuous uniform distribution;
+explain the key properties of the normal distribution;
+distinguish between a univariate and a multivariate distribution and explain the role
+                     of correlation in the multivariate normal distribution;
+determine the probability that a normally distributed random variable lies inside
+                     a given interval;
+define the standard normal distribution, explain how to standardize a random variable,
+                     and calculate and interpret probabilities using the standard normal distribution;
+define shortfall risk, calculate the safety-first ratio, and select an optimal portfolio
+                     using Roy’s safety-first criterion;
+explain the relationship between normal and lognormal distributions and why the lognormal
+                     distribution is used to model asset prices;
+distinguish between discretely and continuously compounded rates of return and calculate
+                     and interpret a continuously compounded rate of return, given a specific holding period
+                     return;
+describe Monte Carlo simulation.",https://www.cfainstitute.org/-/media/documents/protected/refresher-reading/2021/pdf/common-probability-distributions.pdf,"A probability distribution specifies the probabilities of the possible outcomes of
+    a random variable.
+The two basic types of random variables are discrete random variables and continuous
+    random variables. Discrete random variables take on at most a countable number of
+    possible outcomes that we can list asx1,x2, … In contrast, we cannot describe the possible outcomes of a continuous random variableZwith a listz1,z2, … because the outcome (z1+z2)/2, not in the list, would always be possible.
+The probability function specifies the probability that the random variable will take
+    on a specific value. The probability function is denotedp(x) for a discrete random variable andf(x) for a continuous random variable. For any probability functionp(x), 0 ≤p(x) ≤ 1, and the sum ofp(x) over all values ofXequals 1.
+The cumulative distribution function, denotedF(x) for both continuous and discrete random variables, gives the probability that the
+    random variable is less than or equal tox.
+The discrete uniform and the continuous uniform distributions are the distributions
+    of equally likely outcomes.
+The binomial random variable is defined as the number of successes innBernoulli trials, where the probability of success,p, is constant for all trials and the trials are independent. A Bernoulli trial is
+    an experiment with two outcomes, which can represent success or failure, an up move
+    or a down move, or another binary (two-fold) outcome.
+A binomial random variable has an expected value or mean equal tonpand variance equal tonp(1 −p).
+A binomial tree is the graphical representation of a model of asset price dynamics
+    in which, at each period, the asset moves up with probabilitypor down with probability (1 −p). The binomial tree is a flexible method for modeling asset price movement and is
+    widely used in pricing options.
+The normal distribution is a continuous symmetric probability distribution that is completely described by two parameters: its mean, μ, and its variance, σ2.
+A univariate distribution specifies the probabilities for a single random variable.
+    A multivariate distribution specifies the probabilities for a group of related random
+    variables.
+To specify the normal distribution for a portfolio when its component securities are
+    normally distributed, we need the means, standard deviations, and all the distinct
+    pairwise correlations of the securities. When we have those statistics, we have also
+    specified a multivariate normal distribution for the securities.
+For a normal random variable, approximately 68 percent of all possible outcomes are
+    within a one standard deviation interval about the mean, approximately 95 percent
+    are within a two standard deviation interval about the mean, and approximately 99
+    percent are within a three standard deviation interval about the mean.
+A normal random variable,X, is standardized using the expressionZ= (X− μ)/σ, where μ and σ are the mean and standard deviation ofX.Generally, we use the sample mean¯¯¯XX¯as an estimate of μ and the sample standard deviationsas an estimate of σ in this expression.
+The standard normal random variable, denotedZ, has a mean equal to 0 and variance equal to 1. All questions about any normal random
+    variable can be answered by referring to the cumulative distribution function of a
+    standard normal random variable, denotedN(x) orN(z).
+Shortfall risk is the risk that portfolio value will fall below some minimum acceptable
+    level over some time horizon.
+Roy’s safety-first criterion, addressing shortfall risk, asserts that the optimal
+    portfolio is the one that minimizes the probability that portfolio return falls below
+    a threshold level. According to Roy’s safety-first criterion, if returns are normally
+    distributed, the safety-first optimal portfolioPis the one that maximizes the quantity [E(RP) −RL]/σP, whereRLis the minimum acceptable level of return.
+A random variable follows a lognormal distribution if the natural logarithm of the
+    random variable is normally distributed. The lognormal distribution is defined in
+    terms of the mean and variance of its associated normal distribution. The lognormal
+    distribution is bounded below by 0 and skewed to the right (it has a long right tail).
+The lognormal distribution is frequently used to model the probability distribution
+    of asset prices because it is bounded below by zero.
+Continuous compounding views time as essentially continuous or unbroken; discrete
+    compounding views time as advancing in discrete finite intervals.
+The continuously compounded return associated with a holding period is the natural
+    log of 1 plus the holding period return, or equivalently, the natural log of ending
+    price over beginning price.
+If continuously compounded returns are normally distributed, asset prices are lognormally
+    distributed. This relationship is used to move back and forth between the distributions
+    for return and price. Because of the central limit theorem, continuously compounded
+    returns need not be normally distributed for asset prices to be reasonably well described
+    by a lognormal distribution.
+Monte Carlo simulation involves the use of a computer to represent the operation of
+    a complex financial system. A characteristic feature of Monte Carlo simulation is
+    the generation of a large number of random samples from specified probability distribution(s)
+    to represent the operation of risk in the system. Monte Carlo simulation is used in
+    planning, in financial risk management, and in valuing complex securities. Monte Carlo
+    simulation is a complement to analytical methods but provides only statistical estimates,
+    not exact results."
+Basics of Multiple Regression and Underlying Assumptions,Quantitative Methods,"2024",Level II," Multiple linear regression uses two or more independent variables to describe the variation of the dependent variable rather than just one independent variable, as in simple linear regression. It allows the analyst to estimate using more complex models with multiple explanatory variables and, if used correctly, may lead to better predictions, better portfolio construction, or better understanding of the drivers of security returns. If used incorrectly, however, multiple linear regression may yield spurious relationships, lead to poor predictions, and offer a poor understanding of relationships. The analyst must first specify the model and make several decisions in this process. The analyst must answer the following questions: What is the dependent variable of interest? What independent variables are important? What form should the model take? What is the goal of the model—prediction or understanding of the relationship? The analyst specifies the dependent and independent variables and then employs software to estimate the model and produce related statistics. The good news is that the software does the estimation (see Exhibit 1). The analyst’s primary tasks are to specify the model and interpret the output from this software, which are the main subjects of this content.  
+
+Table Contents:
+Software	Programs/Functions
+Excel	Data Analysis > Regression
+Python	scipy.stats.linregressstatsmodels.lmsklearn.linear_model.LinearRegression
+R	lm
+SAS	PROC REGPROC GLM
+STATA	regress
+","describe the types of investment problems addressed by multiple linear regression and the regression process;
+formulate a multiple linear regression model, describe the relation between the dependent variable and several independent variables, and interpret estimated regression coefficients; and
+explain the assumptions underlying a multiple linear regression model and interpret residual plots indicating potential violations of these assumptions.",https://www.cfainstitute.orghttps://study.cfainstitute.org/app/member-access-refresher-readings-2024-cfa-program-level-ii#read/section/learning-outcomes,"Multiple linear regression is used to model the linear relationship between one dependent variable and two or more independent variables.
+In practice, multiple regressions are used to explain relationships between financial variables, to test existing theories, or to make forecasts.
+The regression process covers several decisions the analyst must make, such as identifying the dependent and independent variables, selecting the appropriate regression model, testing if the assumptions behind linear regression are satisfied, examining goodness of fit, and making needed adjustments.
+We have presented the multiple linear regression model and discussed violations of
+    regression assumptions, model specification and misspecification, and models with
+    qualitative variables.
+A multiple regression model is represented by the following equation:
+Coefficientb0is the model’s “intercept,” representing the expected value ofYif all independent variables are zero.
+Parametersb1tobkare the slope coefficients (or partial regression coefficients) for independent variablesX1toXk. Slope coefficientbjdescribes the impact of independent variableXjonY, holding all the other independent variables constant.
+Five main assumptions underlying multiple regression models must be satisfied: (1) linearity, (2) homoskedasticity, (3) independence of errors, (4) normality, and (5) independence of independent variables.
+Diagnostic plots can help detect whether these assumptions are satisfied. Scatterplots of dependent versus and independent variables are useful for detecting nonlinear relationships, while residual plots are useful for detecting violations of homoskedasticity and independence of errors."
+Probability Concepts,Quantitative Methods,"2023",Level I," Investment decisions are made in a risky environment. The tools that allow us to make decisions with consistency and logic in this setting are based on probability concepts. This reading presents the essential probability tools needed to frame and address many real-world problems involving risk. These tools apply to a variety of issues, such as predicting investment manager performance, forecasting financial variables, and pricing bonds so that they fairly compensate bondholders for default risk. Our focus is practical. We explore the concepts that are most important to investment research and practice. Among these are independence, as it relates to the predictability of returns and financial variables; expectation, as analysts continually look to the future in their analyses and decisions; and variability, variance or dispersion around expectation, as a risk concept important in investments. The reader will acquire specific skills and competencies in using these probability concepts to understand risks and returns on investments.  ","define a random variable, an outcome, and an event;
+identify the two defining properties of probability, including mutually exclusive and exhaustive events, and compare and contrast empirical, subjective, and a priori probabilities;
+describe the probability of an event in terms of odds for and against the event;
+calculate and interpret conditional probabilities;
+demonstrate the application of the multiplication and addition rules for probability;
+compare and contrast dependent and independent events;
+calculate and interpret an unconditional probability using the total probability rule;
+calculate and interpret the expected value, variance, and standard deviation of random variables;
+explain the use of conditional expectation in investment applications;
+interpret a probability tree and demonstrate its application to investment problems;
+calculate and interpret the expected value, variance, standard deviation, covariances, and correlations of portfolio returns;
+calculate and interpret the covariances of portfolio returns using the joint probability function;
+calculate and interpret an updated probability using Bayes’ formula;
+identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts.",https://www.cfainstitute.org/-/media/documents/protected/refresher-reading/2023/RR-2023-L1V1R3-probability-concepts.pdf,"A random variable is a quantity whose outcome is uncertain.
+Probability is a number between 0 and 1 that describes the chance that a stated event
+    will occur.
+An event is a specified set of outcomes of a random variable.
+Mutually exclusive events can occur only one at a time. Exhaustive events cover or
+    contain all possible outcomes.
+The two defining properties of a probability are, first, that 0 ≤P(E) ≤ 1 (whereP(E) denotes the probability of an eventE), and second, that the sum of the probabilities of any set of mutually exclusive
+    and exhaustive events equals 1.
+A probability estimated from data as a relative frequency of occurrence is an empirical
+    probability. A probability drawing on personal or subjective judgment is a subjective
+    probability. A probability obtained based on logical analysis is an a priori probability.
+A probability of an eventE,P(E), can be stated as odds forE=P(E)/[1 −P(E)] or odds againstE= [1 −P(E)]/P(E).
+Probabilities that are inconsistent create profit opportunities, according to the
+    Dutch Book Theorem.
+A probability of an eventnotconditioned on another event is an unconditional probability. The unconditional probability
+    of an eventAis denotedP(A). Unconditional probabilities are also called marginal probabilities.
+A probability of an event given (conditioned on) another event is a conditional probability.
+    The probability of an eventAgiven an eventBis denotedP(A|B), andP(A|B) =P(AB)/P(B),P(B) ≠ 0.
+The probability of bothAandBoccurring is the joint probability ofAandB, denotedP(AB).
+The multiplication rule for probabilities isP(AB) =P(A|B)P(B).
+The probability thatAorBoccurs, or both occur, is denoted byP(AorB).
+The addition rule for probabilities isP(AorB) =P(A) +P(B) −P(AB).
+When events are independent, the occurrence of one event does not affect the probability
+    of occurrence of the other event. Otherwise, the events are dependent.
+The multiplication rule for independent events states that ifAandBare independent events,P(AB) =P(A)P(B). The rule generalizes in similar fashion to more than two events.
+According to the total probability rule, ifS1,S2, …,Snare mutually exclusive and exhaustive scenarios or events, thenP(A) =P(A|S1)P(S1) +P(A|S2)P(S2) + … +P(A|Sn)P(Sn).
+The expected value of a random variable is a probability-weighted average of the possible
+    outcomes of the random variable. For a random variableX, the expected value ofXis denotedE(X).
+The total probability rule for expected value states thatE(X) =E(X|S1)P(S1) +E(X|S2)P(S2) + … +E(X|Sn)P(Sn), whereS1,S2, …,Snare mutually exclusive and exhaustive scenarios or events.
+The variance of a random variable is the expected value (the probability-weighted
+    average) of squared deviations from the random variable’s expected valueE(X): σ2(X) =E{[X−E(X)]2}, where σ2(X) stands for the variance ofX.
+Variance is a measure of dispersion about the mean. Increasing variance indicates
+    increasing dispersion. Variance is measured in squared units of the original variable.
+Standard deviation is the positive square root of variance. Standard deviation measures
+    dispersion (as does variance), but it is measured in the same units as the variable.
+Covariance is a measure of the co-movement between random variables.
+The covariance between two random variablesRiandRjin a forward-looking sense is the expected value of the cross-product of the deviations
+    of the two random variables from their respective means: Cov(Ri,Rj) =E{[Ri−E(Ri)][Rj−E(Rj)]}. The covariance of a random variable with itself is its own variance.
+The historical or sample covariance between two random variablesRiandRjbased on a sample of past data of sizenis the average value of the product of the deviations of observations on two random
+    variables from their sample means:Cov(Ri,Rj)=n∑i=1(Ri,t−¯¯¯Ri)(Rj,t−¯¯¯Rj)/(n−1)Cov(Ri,Rj)=∑i=1n(Ri,t−R¯i)(Rj,t−R¯j)/(n−1)
+Correlation is a number between −1 and +1 that measures the co-movement (linear association) between two random variables: ρ(Ri,Rj) = Cov(Ri,Rj)/[σ(Ri) σ(Rj)].
+If two variables have a very strong linear relation, then the absolute value of their
+    correlation will be close to 1. If two variables have a weak linear relation, then
+    the absolute value of their correlation will be close to 0.
+If the correlation coefficient is positive, the two variables are directly related;
+    if the correlation coefficient is negative, the two variables are inversely related.
+To calculate the variance of return on a portfolio ofnassets, the inputs needed are thenexpected returns on the individual assets,nvariances of return on the individual assets, andn(n− 1)/2 distinct covariances.
+Portfolio variance of return isσ2(Rp)=n∑i=1n∑j=1wiwjCov(Ri,Rj)σ2(Rp)=∑i=1n∑j=1nwiwjCov(Ri,Rj).
+The calculation of covariance in a forward-looking sense requires the specification
+    of a joint probability function, which gives the probability of joint occurrences
+    of values of the two random variables.
+When two random variables are independent, the joint probability function is the product
+    of the individual probability functions of the random variables.
+Bayes’ formula is a method for updating probabilities based on new information.
+Bayes’ formula is expressed as follows: Updated probability of event given the new information = [(Probability of the new information given event)/(Unconditional probability of the new information)] × Prior probability of event.
+The multiplication rule of counting says, for example, that if the first step in a
+    process can be done in 10 ways, the second step, given the first, can be done in 5
+    ways, and the third step, given the first two, can be done in 7 ways, then the steps
+    can be carried out in (10)(5)(7) = 350 ways.
+The number of ways to assign every member of a group of sizentonslots isn! =n(n− 1) (n− 2)(n− 3) … 1. (By convention, 0! = 1.)
+The number of ways thatnobjects can be labeled withkdifferent labels, withn1of the first type,n2of the second type, and so on, withn1+n2+ … +nk=n, is given byn!/(n1!n2! …nk!). This expression is the multinomial formula.
+A special case of the multinomial formula is the combination formula. The number of
+    ways to chooserobjects from a total ofnobjects, when the order in which therobjects are listed does not matter, isnCr=(nr)=n!(n−r)!r!nCr=(nr)=n!(n−r)!r!
+The number of ways to chooserobjects from a total ofnobjects, when the order in which therobjects are listed does matter, isnPr=n!(n−r)!nPr=n!(n−r)!This expression is the permutation formula."

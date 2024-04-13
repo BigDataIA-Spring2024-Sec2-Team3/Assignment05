@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 pinecone-client
 streamlit
 openai
@@ -5,3 +6,21 @@ python-dotenv
 requests
 bs4
 selenium
+=======
+[web scrabe]
+selenium
+bs4
+[data parsing]
+python-dotenv
+bcrypt
+snowflake-sqlalchemy
+pandas
+[data validation]
+pydantic
+openai
+streamlit
+pinecone-client
+langchain
+spacy
+csv
+>>>>>>> Stashed changes
